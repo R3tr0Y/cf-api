@@ -28,6 +28,7 @@ export async function handleRequest(request, env, context) {
     org: org,                          // 自治系统号与组织名称
     postal: cf.postalCode || '',       // 邮编
     timezone: cf.timezone || '',       // 时区 (例如: "America/Los_Angeles")
+    timestamp: new Date().toISOString(), // 时间戳
     readme: "https://dash.cloudflare.com/" // 替换为你自定义的说明链接
   };
 
