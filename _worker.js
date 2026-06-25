@@ -19,7 +19,7 @@ export default {
 
       // 2. 根路径或未匹配路径处理（因为去掉了 index.html）
       case '/':
-        return new Response(JSON.stringify({ message: "Welcome to API Gateway. Available endpoints: /api/ip" }), {
+        return new Response(JSON.stringify({ message: "502 bad gateway" }), {
           headers: { 'Content-Type': 'application/json' }
         });
 
